@@ -2,9 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Poppins } from 'next/font/google';
 import "./globals.css";
 import Navbar from "@/components/NavBar";
-
-
-
+// import MyThemeProvider from "@/components/ThemeProvider";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -31,14 +29,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.variable} ${geistMono.variable} antialiased`} >
+      <body className={`${poppins.variable} ${geistMono.variable} antialiased`}>
         {/* <MyThemeProvider> */}
           <Navbar/>
-            <main>
-              {children}
-            </main>
+          <main>
+            {children}
+          </main>
         {/* </MyThemeProvider> */}
-        
       </body>
     </html>
   );
