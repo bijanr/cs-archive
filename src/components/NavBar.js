@@ -16,9 +16,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/*left */}
           <div className="shrink-0 flex items-center ">
-            <Image src='/icon.svg' width={50} height={50} alt='CS/ Archive'></Image>
+            <Image src='/icon.svg' width={50} height={50} alt='CS / Archive'></Image>
             <Link href='/' className='text-xl font-bold text-gray-200 hover:text-gray-50 px-2'>
-              CS/ Archive
+              CS / Archive
             </Link>
           </div>
 

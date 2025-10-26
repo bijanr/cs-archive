@@ -101,7 +101,7 @@ export default async function FolderPage(props) {
               >
                 <FaFile className="w-5 h-5 text-purple-400 mb-2 mr-5 shrink-0" /> {/* file*/}
                 <span className="font-semibold text-white/60 text-left group-hover:text-purple-400">{file.title}</span>
-                {file.author && <span className="text-[16px] text-white/30 group-hover:text-white/50 font-medium">- {file.author}</span>}
+                {file.author && <span className="text-[16px] text-white/30 group-hover:text-white/50 font-medium"> {file.author}</span>}
               </Link>
             ))}
           </div>
