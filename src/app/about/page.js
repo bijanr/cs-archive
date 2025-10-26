@@ -30,7 +30,7 @@ export default function AboutPage() {
         </div>
       </main>
       <footer className="w-full text-center p-6 text-gray-400">
-        Made with ❤️.
+        Made with ❤️
       </footer>
     </div>
     
