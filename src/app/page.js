@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { metadata } from "./layout";
 // export default function Home() {
 //   return (
 //     <div className="flex flex-col items-center justify-center min-h-screen text-center -mt-16 bg-zinc-900"> 
@@ -30,8 +31,8 @@ export default function Home() {
     <div className="max-w-screen mx-auto p-4 md:grid md:grid-cols-2 md:gap-x-12 md:items-center md:text-left lg:border md:rounded-4xl md:border-gray-700/50  md:px-10 md:py-20 lg:mx-10">
         {/*hero*/}
         <div className="md:col-start-1 md:row-start-1">
-            <h1 className="text-5xl md:text-6xl font-bold bg-linear-to-r from-purple-500 to-pink-500 mb-10 text-transparent bg-clip-text mt-20">The Alchemist's Shelf</h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/60">Every book and PYQs you need, meticulously organized.</p>
+            <h1 className="text-5xl md:text-6xl font-bold bg-linear-to-r from-purple-500 to-pink-500 mb-10 text-transparent bg-clip-text mt-20">{metadata.title}</h1>
+            <p className="text-xl md:text-2xl mb-8 text-white/60">{metadata.description}</p>
         </div>
 
         {/*image */}

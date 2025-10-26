@@ -10,7 +10,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className=" sticky top-0 z-50 backdrop-blur-sm bg-zinc-900/90 text-gray-300 shadow-sm border-b border-zinc-800">
+    <header className=" sticky top-0 z-50 backdrop-blur-sm bg-zinc-900/90 text-gray-300 shadow-sm border-b border-gray-700/50">
       <div className="max-w-screen mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/*left */}
@@ -34,7 +34,7 @@ export default function Navbar() {
             <div className="hidden md:flex gap-2">
               <Link 
                 href='https://github.com/bijanr/cs-archive' target='_blank'
-                className="px-4 mx-4 py-2 text-gray-400 hover:text-gray-50 border-l border-gray-700 transition-colors text-2xl"
+                className="px-4 mx-4 py-2 text-gray-400 hover:text-gray-50 border-l border-gray-700/50 transition-colors text-2xl"
               >
                 <FaGithub />
               </Link>
