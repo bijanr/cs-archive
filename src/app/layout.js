@@ -11,8 +11,8 @@ const poppins = Poppins({
 
 
 export const metadata = {
-  title: "The Alchemist's Shelf",
-  description: "Every book and resouce you need, meticulously organized.",
+  title: "CSArchive",
+  description: "The Alchemist's Shelf.",
 };
 
 export default function RootLayout({ children }) {

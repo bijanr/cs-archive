@@ -2,6 +2,7 @@
 
 import { useState } from 'react'; 
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaGithub } from "react-icons/fa";
 import { CiMenuBurger } from "react-icons/ci";
 
@@ -11,11 +12,12 @@ export default function Navbar() {
 
   return (
     <header className=" sticky top-0 z-50 backdrop-blur-sm bg-zinc-900/90 text-gray-300 shadow-sm border-b border-gray-700/50">
-      <div className="max-w-screen mx-auto px-4 py-4">
+      <div className="max-w-screen mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
           {/*left */}
-          <div className="shrink-0 flex items-center gap-3">
-            <Link href='/' className='text-xl font-bold text-gray-200 hover:text-gray-50 px-4 py-2'>
+          <div className="shrink-0 flex items-center ">
+            <Image src='/icon.svg' width={50} height={50} alt='CS/ Archive'></Image>
+            <Link href='/' className='text-xl font-bold text-gray-200 hover:text-gray-50 px-2'>
               CS/ Archive
             </Link>
           </div>
