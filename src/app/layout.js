@@ -12,7 +12,7 @@ const poppins = Poppins({
 
 export const metadata = {
   title: "The Alchemist's Shelf",
-  description: "Every book and PYQs you need, meticulously organized.",
+  description: "Every book and resouce you need, meticulously organized.",
 };
 
 export default function RootLayout({ children }) {

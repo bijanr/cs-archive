@@ -9,6 +9,7 @@ export const structure = {
       type: 'folder',
       table: 'books', // supabase table 
       children: [
+        { id: 'ai', name: 'Artificial Intelligence', type: 'folder', table: 'books', children: [] },
         { id: 'cd', name: 'Compiler Design', type: 'folder', table: 'books', children: [] },
         { id: 'cg', name: 'Computer Graphics', type: 'folder', table: 'books', children: [] },
         { id: 'cn', name: 'Computer Networks', type: 'folder', table: 'books', children: [] },
