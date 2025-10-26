@@ -10,7 +10,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className=" sticky top-0 z-50 backdrop-blur-sm bg-background/95 text-gray-300 shadow-sm border-b border-gray-700">
+    <header className=" sticky top-0 z-50 backdrop-blur-sm bg-zinc-900/90 text-gray-300 shadow-sm border-b border-zinc-800">
       <div className="max-w-screen mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/*left */}
@@ -23,10 +23,10 @@ export default function Navbar() {
           {/* right */}
           <div className="flex items-center gap-6">
             <nav className="hidden md:flex gap-6">
-              <Link href='/resources' className="text-gray-400 hover:text-gray-50 font-semibold transition-colors">
+              <Link href='/resources' className="text-gray-400 hover:text-purple-300 font-semibold transition-colors">
                 Resources
               </Link>
-              <Link href='/about' className="text-gray-400 hover:text-gray-50 font-semibold transition-colors">
+              <Link href='/about' className="text-gray-400 hover:text-purple-300 font-semibold transition-colors">
                 About
               </Link>
             </nav>
@@ -90,20 +90,20 @@ export default function Navbar() {
             <nav className='flex flex-col gap-2'>
               <Link 
                href='/resources' 
-                className="block px-4 py-3 text-gray-400 hover:text-gray-50 font-semibold transition-colors rounded-lg hover:bg-gray-800"
+                className="block px-4 py-3 text-gray-400 hover:text-gray-50 font-semibold transition-colors rounded-lg hover:bg-zinc-900"
                 onClick={() => setIsMenuOpen(false)} >
               Resources
              </Link>
              <Link 
               href='/about' 
-              className="block px-4 py-3 text-gray-400 hover:text-gray-50 font-semibold transition-colors rounded-lg hover:bg-gray-800"
+              className="block px-4 py-3 text-gray-400 hover:text-gray-50 font-semibold transition-colors rounded-lg hover:bg-zinc-900"
               onClick={() => setIsMenuOpen(false)} 
             >
               About
             </Link>
             <Link 
               href='https://github.com/bijanr/cs-archive' target='_blank'
-              className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-gray-50 font-semibold transition-colors rounded-lg hover:bg-gray-800"
+              className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-gray-50 font-semibold transition-colors rounded-lg hover:bg-zinc-900"
               onClick={() => setIsMenuOpen(false)} 
             >
               <FaGithub/>

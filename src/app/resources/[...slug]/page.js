@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FiFolder, FiFileText } from 'react-icons/fi';
+import { FaFolder, FaFile } from 'react-icons/fa6';
 import { structure } from '../../../lib/folderStructure'; // Import the structure
 import { supabase } from '../../../lib/supabaseClient'; // Import supabase
 
@@ -73,14 +73,14 @@ export default async function FolderPage(props) {
       {subfolders.length > 0 && (
         <>
           <h2 className="text-xl font-semibold text-emerald-50 mb-4">Folders</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+          <div className="flex flex-col  gap-4">
             {subfolders.map((folder) => (
               <Link 
                 key={folder.id} 
                 href={`/resources/${[...slug, folder.id].join('/')}`} // appends to the current path
-                className="flex flex-col items-center p-4 border rounded-lg shadow-sm hover:bg-gray-100 transition-colors"
+                className="flex flex-row items-center p-4 border rounded-lg shadow-sm hover:bg-gray-100 transition-colors"
               >
-                <FiFolder className="w-12 h-12 text-blue-600 mb-2" />
+                <FaFolder className="w-6 h-6 text-blue-600 mb-2 mr-5" />
                 <span className="text-gray-800 font-medium text-center">{folder.name}</span>
               </Link>
             ))}
