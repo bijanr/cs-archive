@@ -31,5 +31,5 @@ Contributions are definitely welcome!
 5.  **Push** to the branch (`git push origin feature/your-feature`).
 6.  Open a **Pull Request**.
 
-If you want to add a book, please email me at ***bijanr2004@gmail.com***.<br/>
+If you want any book to be added, please [email](mailto:bijanr2004@gmail.com) me.<br/>
 If you find a bug, please [open an issue](https://github.com/bijanr/cs-archive/issues).
