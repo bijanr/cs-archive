@@ -30,6 +30,7 @@ export const structure = {
       type: 'folder',
       table: 'pyqs',// supabase table
       children: [
+        { id: 'ai', name: 'Artificial Intelligence', type: 'folder', table: 'books', children: [] },
         { id: 'cd', name: 'Compiler Design', type: 'folder', table: 'pyqs', children: [] },
         { id: 'cg', name: 'Computer Graphics', type: 'folder', table: 'pyqs', children: [] },
         { id: 'cn', name: 'Computer Networks', type: 'folder', table: 'pyqs', children: [] },

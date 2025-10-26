@@ -10,9 +10,28 @@ const poppins = Poppins({
 });
 
 
+
+
 export const metadata = {
-  title: "CSArchive",
-  description: "The Alchemist's Shelf.",
+  title: "CSArchive", 
+  description: "The Alchemist's Shelf.", 
+  metadataBase: new URL("https://csarchive.vercel.app"), 
+  openGraph: {
+    title: "The Alchemist's Shelf",
+    description: "Every book and resouce you need, meticulously organized.",
+    url: "https://csarchive.vercel.app",
+    siteName: "The Alchemist's Shelf",
+    images: [
+      {
+        url: "/icon.svg", 
+        width: 1200,    
+        height: 630,      
+        alt: "The Alchemist's Shelf Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {

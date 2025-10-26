@@ -1,5 +1,5 @@
 'use client';
-
+// doesnt work!! saved for later on
 import { ThemeProvider } from 'next-themes';
 
 export default function MyThemeProvider({ children }) {

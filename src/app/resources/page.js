@@ -10,7 +10,7 @@ export default function ResourcesRootPage() {
     <div className="max-w-5xl mx-auto p-8 md:p-12 ">
       <h1 className="text-4xl font-bold mb-8 text-white/80 hover:text-purple-500/90">Resources</h1>
 
-      {/* column view */}
+      {/* row view */}
       <div className="flex flex-col gap-3">
         {topLevelFolders.map((folder) => (
           <Link 
